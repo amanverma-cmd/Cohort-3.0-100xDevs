@@ -4,12 +4,9 @@ import jwt from "jsonwebtoken";
 import z from "zod";
 import "dotenv/config";
 import { type Request, type Response } from "express";
-config();
-
 import middleware from "./middleware.js";
 import prisma from "./lib/db.js";
-import { config } from "dotenv";
-import { error } from "node:console";
+
 
 const app = express();
 app.use(express.json());
